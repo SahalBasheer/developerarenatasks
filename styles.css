@@ -1,0 +1,197 @@
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #444 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight {
+    color: #e8491d;
+}
+
+header .current a {
+    color: #e8491d;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+button {
+    display: inline-block;
+    color: #fff;
+    background: #e8491d;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+/* About Section */
+#about {
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    background: #f4f4f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: #e8491d 4px solid;
+}
+
+#about h2 {
+    color: #e8491d;
+}
+
+/* Experience Section */
+#experience {
+    background: #f4f4f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#experience h2 {
+    color: #e8491d;
+}
+
+#experience p {
+    line-height: 1.6;
+}
+
+/* Projects Section */
+#projects {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#projects h2 {
+    color: #e8491d;
+}
+
+.project-item {
+    border-left: #e8491d 4px solid;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    margin-bottom: 5px;
+}
+
+.project-item p {
+    margin: 0;
+}
+
+/* Contact Section */
+#contact {
+    background: #f4f4f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    color: #e8491d;
+}
+
+#contact p {
+    line-height: 1.6;
+}
+
+#contact a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
