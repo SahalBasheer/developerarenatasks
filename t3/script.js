@@ -1,7 +1,7 @@
-// Load Tasks from Local Storage on Page Load
+
 window.onload = loadTasks;
 
-// Function to Add Task
+
 function addTask() {
     const taskInput = document.getElementById('taskInput');
     const taskText = taskInput.value.trim();
@@ -15,7 +15,6 @@ function addTask() {
     taskInput.value = '';
 }
 
-// Function to Create Task Element
 function createTaskElement(taskText, completed = false) {
     const li = document.createElement('li');
     if (completed) li.classList.add('completed');
@@ -29,13 +28,13 @@ function createTaskElement(taskText, completed = false) {
     return li;
 }
 
-// Function to Toggle Complete
+
 function toggleComplete(span) {
     span.parentElement.classList.toggle('completed');
     saveTasks();
 }
 
-// Function to Edit Task
+
 function editTask(button) {
     const li = button.parentElement;
     const taskText = li.querySelector('span').innerText;
@@ -47,7 +46,7 @@ function editTask(button) {
     }
 }
 
-// Function to Delete Task
+
 function deleteTask(button) {
     const li = button.parentElement;
     li.classList.add('fadeOut');
@@ -57,7 +56,7 @@ function deleteTask(button) {
     }, 300);
 }
 
-// Function to Save Tasks in Local Storage
+
 function saveTasks() {
     const tasks = [];
     document.querySelectorAll('#taskList li').forEach(li => {
@@ -69,7 +68,6 @@ function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-// Function to Load Tasks from Local Storage
 function loadTasks() {
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     tasks.forEach(task => {
